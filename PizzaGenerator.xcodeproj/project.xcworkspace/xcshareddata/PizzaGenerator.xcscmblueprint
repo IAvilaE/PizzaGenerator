@@ -1,14 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D36659AAB85D2E979320902D5646D1F861396280",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D36659AAB85D2E979320902D5646D1F861396280+++1A6BA8B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "D36659AAB85D2E979320902D5646D1F861396280" : 0
+    "D36659AAB85D2E979320902D5646D1F861396280+++1A6BA8B" : 0,
+    "D36659AAB85D2E979320902D5646D1F861396280+++5B63B64" : 0,
+    "D36659AAB85D2E979320902D5646D1F861396280+++48400A2" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6B6A475E-9532-41CC-A55D-C49C513498FD",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D36659AAB85D2E979320902D5646D1F861396280" : "PizzaGenerator\/PizzaGenerator\/"
+    "D36659AAB85D2E979320902D5646D1F861396280+++1A6BA8B" : "PizzaGenerator\/",
+    "D36659AAB85D2E979320902D5646D1F861396280+++5B63B64" : "PizzaGenerator\/PizzaGenerator\/",
+    "D36659AAB85D2E979320902D5646D1F861396280+++48400A2" : "PizzaGenerator\/PizzaGenerator\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PizzaGenerator",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -17,12 +21,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IAvilaE\/PizzaGenerator.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D36659AAB85D2E979320902D5646D1F861396280"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D36659AAB85D2E979320902D5646D1F861396280+++1A6BA8B"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IAvilaE\/PizzaGenerator.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D36659AAB85D2E979320902D5646D1F861396280"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D36659AAB85D2E979320902D5646D1F861396280+++48400A2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IAvilaE\/PizzaGenerator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D36659AAB85D2E979320902D5646D1F861396280+++5B63B64"
     }
   ]
 }

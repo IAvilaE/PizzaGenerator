@@ -28,10 +28,17 @@ class ConfirmarViewController: UIViewController {
     }
     
     @IBAction func confirmar(sender: UIButton) {
+        let alert = UIAlertController(title: "Info", message: "¿Desea confirmar su pedido?", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { action in
+            self.mostrarConfirmacion()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func mostrarConfirmacion() {
         let alert = UIAlertController(title: "Info", message: "Su pedido se ha realizado!. Le llegará a su domicilio en 20 minutos.", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
-    
-    
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Alc-vF-8qp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Alc-vF-8qp">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDa-Ac-tOi">
-                                <rect key="frame" x="266" y="466" width="68" height="30"/>
+                                <rect key="frame" x="267" y="466" width="67" height="30"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlW-Ko-hv5">
-                                <rect key="frame" x="266" y="189" width="69" height="30"/>
+                                <rect key="frame" x="266" y="189" width="68" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Pequeña ">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbQ-g2-6MI">
-                                <rect key="frame" x="256" y="293" width="88" height="40"/>
+                                <rect key="frame" x="257" y="293" width="87" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title=" Grande ">
@@ -84,6 +84,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="guK-Az-CS7"/>
+                    <connections>
+                        <outlet property="chica" destination="ZlW-Ko-hv5" id="QCu-b9-xnZ"/>
+                        <outlet property="grande" destination="YbQ-g2-6MI" id="4mr-2v-OIy"/>
+                        <outlet property="mediana" destination="xgU-fI-OJ0" id="kGb-gu-aHf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +175,7 @@
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="anchoa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qix-Ps-nce">
-                                        <rect key="frame" x="20" y="358" width="57" height="21"/>
+                                        <rect key="frame" x="20" y="358" width="56" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -206,13 +211,16 @@
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JEW-25-13c">
-                                        <rect key="frame" x="135" y="144" width="51" height="31"/>
+                                        <rect key="frame" x="134" y="144" width="51" height="31"/>
                                         <connections>
                                             <action selector="selectedSalchicha:" destination="Ppv-N6-v9r" eventType="valueChanged" id="e35-Ux-d5k"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KYW-iQ-mi4">
-                                        <rect key="frame" x="119" y="353" width="51" height="31"/>
+                                        <rect key="frame" x="118" y="353" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="selectedAnchoa:" destination="Ppv-N6-v9r" eventType="valueChanged" id="Srw-ov-k0X"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jamon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4X-LU-q0s">
                                         <rect key="frame" x="20" y="25" width="47" height="21"/>
@@ -239,7 +247,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="salchicha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-QS-A66">
-                                        <rect key="frame" x="20" y="149" width="73" height="21"/>
+                                        <rect key="frame" x="20" y="149" width="72" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -311,7 +319,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIJ-e1-ARU">
-                                <rect key="frame" x="266" y="530" width="68" height="30"/>
+                                <rect key="frame" x="267" y="530" width="67" height="30"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -350,7 +358,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPR-m9-k4h">
-                                <rect key="frame" x="266" y="535" width="68" height="30"/>
+                                <rect key="frame" x="267" y="535" width="67" height="30"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -375,7 +383,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74c-FI-U1T">
-                                <rect key="frame" x="266" y="206" width="68" height="30"/>
+                                <rect key="frame" x="267" y="206" width="67" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Cheddar ">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -421,6 +429,12 @@
                             <constraint firstItem="AX1-Vh-2at" firstAttribute="centerX" secondItem="gh0-Zs-tYO" secondAttribute="centerX" id="z41-m5-9iw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cheddar" destination="74c-FI-U1T" id="UI9-e8-Nz3"/>
+                        <outlet property="mozzarella" destination="jkp-Yo-paK" id="97o-9Y-Lmk"/>
+                        <outlet property="parmesano" destination="AX1-Vh-2at" id="VZw-FS-cRt"/>
+                        <outlet property="sinQueso" destination="kkY-Id-52O" id="r4L-Yr-HSd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Crl-LK-UO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -445,7 +459,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYi-ea-AkN">
-                                <rect key="frame" x="266" y="519" width="68" height="30"/>
+                                <rect key="frame" x="267" y="519" width="67" height="30"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -498,6 +512,11 @@
                             <constraint firstItem="Ywe-6e-hcV" firstAttribute="top" secondItem="fYi-ea-AkN" secondAttribute="bottom" constant="51" id="zHa-qU-9ei"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="crujiente" destination="R7x-JU-gix" id="SfJ-ru-MTG"/>
+                        <outlet property="delgada" destination="xth-Mg-AzZ" id="mQz-Yl-4Bb"/>
+                        <outlet property="gruesa" destination="pd0-U2-c5D" id="my5-ug-ci1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GG-Ms-ZZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
